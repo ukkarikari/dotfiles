@@ -7,8 +7,10 @@ font pango:ProggyVectorDotted 3
 # --misc shortcuts--
 
 # print utility
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s 
+bindsym Print --release exec --no-startup-id scrot -fs ~/Screenshots/%F-%H%M%S.png
+
+# print to clipboard with xclip
+bindsym Shift+Print exec scrot -e 'xclip -selection clipboard -t image/png -i $f' 
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -83,7 +85,7 @@ bindsym $mod+n border normal
 # --window management--
 
 # self explanatory
-focus_follows_mouse no
+focus_follows_mouse yes
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
