@@ -32,6 +32,8 @@ PACKAGES=(
 	qbittorrent
 
 	# --- utilities
+	pass
+	autorandr
 	lxappearance
 	gnome-disk-utility
 	yt-dlp
@@ -44,7 +46,7 @@ PACKAGES=(
 	gvfs-fuse
 	qalc
 	ncal
-	#network-manager-applet \
+	barrier
 )
 
 sudo apt install -y "${PACKAGES[@]}"

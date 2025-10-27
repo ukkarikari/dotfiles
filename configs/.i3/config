@@ -10,7 +10,7 @@ font pango:ProggyVectorDotted 3
 bindsym Print --release exec --no-startup-id scrot -fs ~/Screenshots/%F-%H%M%S.png
 
 # print to clipboard with xclip
-bindsym Shift+Print exec scrot -e 'xclip -selection clipboard -t image/png -i $f' 
+bindsym Shift+Print --release exec scrot -s -e 'xclip -selection clipboard -t image/png -i $f' 
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -48,6 +48,9 @@ bindsym XF86MonBrightnessUp exec brightnessctl set +20%
 # 	======= AUTO START APPLICATIONS ======
 
 exec --no-startup-id dex --autostart --environment i3
+
+# --adsakdad---
+exec --no-startup-id autorandr -c 
 
 # --lock--
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock
