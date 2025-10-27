@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-DOTFILES_DIR="$PWD/../configs/"
+DOTFILES_DIR="$HOME/dotfiles/configs/"
 
 mkdir -p "$HOME/.config"
 mkdir -p "$HOME/.i3"

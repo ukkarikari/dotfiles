@@ -20,7 +20,7 @@ sudo apt install -y \
 	i3lock \
 	xss-lock \
 	dmenu \
-	dusnt \
+	dunst \
 	unzip \
 	zip \
 	tar \

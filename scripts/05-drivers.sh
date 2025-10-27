@@ -11,4 +11,3 @@ sudo apt install -y \
 
 
 sudo systemctl start tlp
-sudo modprobe -r iwlwifi && sudo modprobe iwlwifi

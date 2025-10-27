@@ -42,6 +42,8 @@ PACKAGES=(
 	usbutils
 	gvfs-backends
 	gvfs-fuse
+	qalc
+	ncal
 	#network-manager-applet \
 )
 
