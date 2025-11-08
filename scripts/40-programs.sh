@@ -22,6 +22,7 @@ PACKAGES=(
 	kdenlive
 	inkscape 
 	gimp
+	evince
 
 	# -- files
 	nemo
@@ -47,6 +48,7 @@ PACKAGES=(
 	qalc
 	ncal
 	barrier
+	wireguard
 )
 
 sudo apt install -y "${PACKAGES[@]}"

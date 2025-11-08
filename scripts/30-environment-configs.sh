@@ -14,4 +14,4 @@ ln -sf "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
 
 # copy problematic files that either are modified alot or can be overriden by updates
 cp "$DOTFILES_DIR/.config/mimeapps.list" "$HOME/.config/mimeapps.list"
-sudo cp "$DOTFILES_DIR/70-synaptics.conf" "$HOME/.config/mimeapps.list"
+sudo cp "$DOTFILES_DIR/70-synaptics.conf" "/etc/X11/xorg.conf.d/70-synaptics.conf"

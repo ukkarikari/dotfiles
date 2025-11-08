@@ -52,6 +52,9 @@ exec --no-startup-id dex --autostart --environment i3
 # --adsakdad---
 exec --no-startup-id autorandr -c 
 
+# -- fdsfjkdsfjksf--
+exec --no-startup-id xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 1.0
+
 # --lock--
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock
 
